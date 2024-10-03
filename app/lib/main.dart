@@ -39,6 +39,8 @@ class _FadingTextAnimationState extends State<FadingTextAnimation> {
           duration: Duration(seconds: 1),
           child:
           Container(
+            width: 400,
+            height: 100,
             alignment: Alignment.center,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
@@ -47,6 +49,7 @@ class _FadingTextAnimationState extends State<FadingTextAnimation> {
                 width: 2,
               ),
               image: DecorationImage(
+                fit: BoxFit.cover,
                   image: AssetImage("assets/images/miku.png"),
               ),
             ),
